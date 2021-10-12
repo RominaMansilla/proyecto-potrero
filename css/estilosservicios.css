@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    background-color:transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+header{
+    background-color:#11242c;
+    height: 90px;
+    
+}
+.encabezado{
+    
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+    gap: 350px;
+
+}
+.logo_nombre{
+    width: 25%;
+    display: flex;
+    padding-top: 5px;
+}
+.nombre_sitio{
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    position: relative;
+    top: 3.5px;
+}
+.logo{
+    margin-top: -4.1px;
+}
+.nav{
+    text-decoration: none;
+    color: white;
+}
+.panel_nav{
+    margin-right: 30px;
+    width: 40%;
+    padding-top: 13px;
+    justify-content: center;  
+
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicios{
+    text-align: center;
+    margin: 20px;
+    color: black;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.seccion_servicios{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    margin-top: 30px;
+    color:black;
+}
+.derecho_familia{
+    width: 30%;
+    height: 400px;
+    text-align: center;
+    font-size: 13px;
+}
+.derecho_sucesorio{
+    width: 30%;
+    height: 400px;
+    text-align: center;
+    font-size: 13px;
+}
+.abogacia_preventiva{
+    width: 30%;
+    height: 400px;
+    text-align: center;
+    font-size: 13px;
+}
+.consulta{
+    background-color: #11242c;
+    font-size: x-large;
+    width: 220px;
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+    margin-top: -120px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+footer{
+    background-color:#11242c;
+}
+.container_footer{
+    display: flex;
+    justify-content: space-around;
+    gap: 750px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+}
+.navegacion{
+    display: table;
+    line-height: 25px;
+
+}
+.redes{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 15px;
+    width: 200px;
+}
+.facebook{
+    font-size: 25px;
+    background-color: #3b5998;
+    border-radius: 0%;
+    padding: 3px;
+}
+.twitter{
+    font-size: 25px;
+    background-color: #00acee;
+    border-radius: 0%;
+    padding: 3px;
+
+}
+.linkedin{
+    font-size: 25px;
+    background-color:#0072b1;
+    border-radius: 0%;
+    padding: 3px;
+
+}
+.instagram{
+    font-size: 25px;
+    background-color:#C13584;
+    border-radius: 0%;
+    padding: 3px;
+
+}
+.whatsapp{
+    font-size: 25px;
+    background-color:#25d366;
+    border-radius: 0%;
+    padding: 3px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.titulo{
+    font-size: 17px;
+}
+
+
