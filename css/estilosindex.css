@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300&family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@300&family=Roboto&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
 }
 html{
     scroll-behavior: smooth;
@@ -14,82 +18,87 @@ body{
 
 header{
     background-color:#11242c;
-    height: 90px;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
+    font-size: 15px;
 }
-
-.encabezado{
-    display: flex;
-    justify-content: space-around;
-    padding-top: 25px;
-    gap: 350px;
-}
-.logo_nombre{
-    width: 25%;
-    display: flex;
-    padding-top: 5px;
-}
-.nombre_sitio{
+a{
     color: white;
-    font-size: 17px;
     text-decoration: none;
-    position: relative;
-    top: 3.5px;
-}
-.logo{
-    margin-top: -4.1px;
-}
-.nav{
-    text-decoration: none;
-    color: white;
-}
-.panel_nav{
-    margin-right: 30px;
-    width: 40%;
-    padding-top: 13px;
-    justify-content: center;  
-
 }
 ul{
     list-style: none;
     display: flex;
+    justify-content: space-between;   
+}
+
+.encabezado{
+    display: flex;
     justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-.video{
-    width: 100%;
-    bottom: -3px;
-    opacity: 0.7;
+.logo_nombre{
+    display: flex;
+    align-items: center;
+    margin-left: 4px;
+}
+.logo{
+    margin-top: 8px;
+}
+
+.nombre_sitio{
+    font-size: 16px;
+}
+
+.panel_nav{
+    margin-right: 40px;
+    width: 40%;
+    padding-top: 17px;
+
+}
+
+.banner_video {
     position: relative;
-
 }
-.frase_autor{
+.video {
+    width: 100%;
+    opacity: 0.7;
+}
+
+.frase_autor {
     color:black;
-    line-height: 60px;
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     width: 100%;
     text-align: center;
-    margin-top: -380px;   
 }
-.frase{
+
+.frase {
     font-weight: 600;
     font-size: 60px;
 }
-.autor{
+
+.autor {
     font-size: 35px;
 }
 .seccion_estudio{
-    background-color: transparent
+    padding-top: 20px;
+    padding-bottom: 90px;
+}
+.div_vacio{
+    padding-top: 30px;
 }
 .seccion{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 30px;
+    padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 30px;
     padding-right: 30px;
@@ -107,14 +116,7 @@ ul{
     font-weight: 900;
     padding-top: 30px;
 }
-.linea{
-    background-color: #11242c;
-    width: 100px;
-    height: 10px;
-    margin-left: 580px;
-    margin-top: 10px;
- 
-}
+
 .dra{
     text-align: center;
     line-height: 70px;
@@ -122,13 +124,13 @@ ul{
 
 .seccion_general{
     background-color: #dddbcb;
-    padding-bottom: 40px;
+    padding-bottom: 90px;
     
 }
 
 .servicios{
     text-align: center;
-    padding-top: 30px;
+    padding-top: 90px;
     color: black;
     font-size: 35px;
     font-weight: 900;
@@ -164,7 +166,6 @@ ul{
 }
 .consulta_boton{
     background-color: #11242c;
-    font-size: x-large;
     width: 220px;
     margin: auto;
     text-align: center;
@@ -172,10 +173,6 @@ ul{
     margin-top: -120px;
     font-size: 20px;  
     
-}
-a{
-    color: white;
-    text-decoration: none;
 }
 
 .seccion_contacto{
@@ -202,23 +199,23 @@ a{
     line-height: 30px;
 }
 .textos{
-    width: 500px;
+    width: 100%;
     height: 25px;
 }
 .mensaje{
     margin-top: 7px;
-    width: 500px;
+    width: 100%;
     font-family:Arial, Helvetica, sans-serif;
 }
-.botones{  
-    width: 120px;
+.botones {  
     display: flex;
-    justify-content: space-between;
-    margin-left: 380px;
+    justify-content: flex-end;
 }
-.boton{
+
+.boton {
     padding: 5px;
 }
+
 .datos_contacto{
     width: 40%;
     margin-right: -20px;
@@ -294,7 +291,6 @@ a{
     border-radius: 100%;
 }
 
-
 footer{
     background-color:#11242c;
 }
@@ -309,10 +305,7 @@ footer{
     display: table;
     line-height: 25px;
 }
-a{
-    text-decoration: none;
-    color: white;
-}
+
 .titulo{
     font-size: 17px;
 }
@@ -320,11 +313,96 @@ a{
     color: white;
 }
 
-@media (max-width: 768px) {
-    body {
-        background-color: aquamarine;
+@media (max-width: 750px) {
+    body{
+        font-size: 12px;
     }
+
+    main {
+        padding-top: 105px;
+    }
+
     header{
-        width: 80%;
+        width: 100%;
+        font-size: 12px;
+
+    }
+    .encabezado {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .logo_nombre {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .panel_nav {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .frase {
+        font-size: 25px;
+    }
+
+    .autor {
+        font-size: 16px;
+    }
+    .seccion_estudio{
+        padding-top: 50px;
+    }
+    .seccion {
+        flex-direction: column;
+        padding-top: 15px;
+    }
+    .elestudio{
+        font-size: 25px;
+    }
+
+    .estudio {
+        width: 100%;
+    }
+
+    .abogada { 
+        width:100%;
+
+    }
+    .dra{
+        line-height: 40px;
+        font-size: 18px;
+    }
+    .imagen{
+        padding-top: 20px;
+    }
+    .seccion_servicios {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .derecho_familia, .derecho_sucesorio, .abogacia_preventiva {
+        width: 100%;
+        height: auto;
+    }
+
+    .contacto_formulario {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+
+    .datos_contacto {
+        width: 100%;
+    }
+
+    .mensaje {
+        width: 100%;
     }
 }

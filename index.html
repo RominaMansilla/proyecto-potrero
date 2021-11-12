@@ -8,88 +8,83 @@
     <link rel="icon" href="Imagenes/LOGO-removebg-preview.png">
     <link rel="stylesheet" href="css/estilosindex.css">
     <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300&family=Roboto&display=swap');
-        </style>
-        <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@300&family=Roboto&display=swap');
-        </style>
 </head>
 <body>
     <header>
         <div class="encabezado">
             <div class="logo_nombre">
-                 <a class="nav" href="#inicio"><img class="logo" src="Imagenes/20210915_212648_0000_preview_rev_1.png" height="43px" width="51px" alt=""></a>
-                 <a class="nav" href="#inicio"> <span class="nombre_sitio">ESTUDIO JURÍDICO AM</span></a>
+                <a href="#inicio"><img class="logo" src="Imagenes/20210915_212648_0000_preview_rev_1.png" height="40px" width="48px" alt=""></a>
+                <a href="#inicio"> <span class="nombre_sitio">ESTUDIO JURÍDICO AM</span></a>
             </div>
             <div class="panel_nav">
-                 <nav>
+                <nav>
                     <ul>
-                        <li><a class="nav" href="#inicio">INICIO</a></li>
-                        <li><a class="nav" href="#el_estudio">EL ESTUDIO</a></li>
-                        <li><a class="nav" href="#sec_servicios">SERVICIOS</a></li>
-                        <li><a class="nav" href="#sec_contacto">CONTACTO</a></li>
+                        <li><a href="#inicio">INICIO</a></li>
+                        <li><a href="#el_estudio">EL ESTUDIO</a></li>
+                        <li><a href="#sec_servicios">SERVICIOS</a></li>
+                        <li><a href="#sec_contacto">CONTACTO</a></li>
                     </ul>
-                 </nav>
+                </nav>
             </div>
         </div>
     </header>
-    <main>
-        <section class="banner_video" id="inicio">
+    <main id="inicio">
+        <section class="banner_video">
             <video class="video" src="Imagenes/pexels-anthony-shkraba-production-8136086.mp4"autoplay muted loop></video>
             <div class="frase_autor">
                 <p class="frase">ESTUDIO JURÍDICO AM</p>
                 <p class="autor">Asesoría legal</p>
             </div>
         </section>
-        <section id="el_estudio" class="seccion_estudio">
+
+        <div class="div_vacio" id="el_estudio"></div>
+        <section class="seccion_estudio">
             <h1 class="elestudio">EL ESTUDIO</h1>
-            <div class="linea"></div>
-         <section class="seccion">
-             <div class="estudio">
+            <article class="seccion">
+                <div class="estudio">
                 <p>El Estudio Jurídico AM ofrece una atención amable y asesoramiento personalizado 
                     en derecho de familia y sucesiones, siguiendo las necesidades de cada cliente.</p>
                 <h2 class="dra">Dra. Andrea Paola Mansilla</h2>
-                 <p>Abogada egresada de la Universidad de la Patagonia San Juan Bosco con matrícula 
+                <p>Abogada egresada de la Universidad de la Patagonia San Juan Bosco con matrícula 
                     C1255 del Colegio Público de Abogados de Comodoro Rivadavia.</p>
-             </div>
-             <div class="imagen">
+                </div>
+                <div class="imagen">
                 <img class="abogada" src="Imagenes/abogada.jpg" height="330px" width="500px" alt="">
-             </div>
-         </section>
+                </div>
+            </article>
         </section>
+
         <section class="seccion_general" id="sec_servicios">
             <h1 class="servicios">SERVICIOS</h1>
-            <div class="linea"></div>
-        <section class="seccion_servicios">
-            <div class="derecho_familia">
-                <img src="Imagenes/derecho de familia.jpg" width="100%" height="275px" alt="">
-                <h2 >DERECHO DE FAMILIA</h2>
+            <article class="seccion_servicios">
+                <div class="derecho_familia">
+                    <img src="Imagenes/derecho de familia.jpg" width="100%" height="275px" alt="">
+                    <h2 >DERECHO DE FAMILIA</h2>
+                </div>
+                <div class="derecho_sucesorio">
+                    <img src="Imagenes/Derecho-de-Sucesiones-1024x683.jpg" width="100%" height="275px" alt="">
+                    <h2>SUCESIONES</h2>
+                </div>
+                <div class="abogacia_preventiva">
+                    <img src="Imagenes/abogacía preventiva.jpg" width="100%" height="275px" alt="">
+                    <h2>ABOGACÍA PREVENTIVA</h2>
+                </div>
+            </article>
+            <div class="consulta_boton">
+                <a class="boton" href="#sec_contacto">Realiza tu consulta</a>
             </div>
-            <div class="derecho_sucesorio">
-                <img src="Imagenes/Derecho-de-Sucesiones-1024x683.jpg" width="100%" height="275px" alt="">
-                <h2>SUCESIONES</h2>
-            </div>
-            <div class="abogacia_preventiva">
-                <img src="Imagenes/abogacía preventiva.jpg" width="100%" height="275px" alt="">
-                <h2>ABOGACÍA PREVENTIVA</h2>
-            </div>  
-        </section>
-        <div class="consulta_boton">
-            <a class="boton" href="#sec_contacto">Realiza tu consulta</a>
-        </div>
-        </section>
-        <section class="fijar">
-            <a class="fijar_boton" href="https://api.whatsapp.com/send?phone=5492974229206> " target="_blank"><span class="jam jam-whatsapp fijar_boton"></span></a>
+            <section class="fijar">
+                <a class="fijar_boton" href="https://api.whatsapp.com/send?phone=5492974229206> " target="_blank"><span class="jam jam-whatsapp fijar_boton"></span></a>
+            </section>
         </section>
 
         <section class="seccion_contacto" id="sec_contacto">
             <h1 class="contacto">CONTACTO</h1>
             <div class="linea"></div>
-            <section class="contacto_formulario">
+            <div class="contacto_formulario">
                 <div class="formulario">
                     <h2 class="consulta">Envía tu consulta</h2>
-                    <p class="comentarios"> Para preguntas o comentarios por favor llámanos o completa el formulario a continuación:</p>
+                    <p class="comentarios">Para preguntas o comentarios por favor llámanos o completa el formulario a continuación:</p>
                     <form action="validar.php" method="post">
                         <div>
                             <label for="Nombre"></label> 
@@ -157,7 +152,6 @@
             <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2777.909085538405!2d-67.50268568442876!3d-45.87312847910791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde454ee7128d4eb%3A0xe9da7b224baf1ec3!2sRamos%20Mej%C3%ADa%20191%2C%20U9000BSC%20Comodoro%20Rivadavia%2C%20Chubut!5e0!3m2!1ses!2sar!4v1632853465918!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
             </iframe>      
         </section>
-
     </main>
     <footer>
         <div class="container_footer">
