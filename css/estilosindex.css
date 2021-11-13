@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html{
     scroll-behavior: smooth;
 }
@@ -59,7 +60,6 @@ ul{
     margin-right: 40px;
     width: 40%;
     padding-top: 17px;
-
 }
 
 .banner_video {
@@ -88,18 +88,16 @@ ul{
     font-size: 35px;
 }
 .seccion_estudio{
-    padding-top: 20px;
-    padding-bottom: 90px;
+    padding-top: 0px;
+    padding-bottom: 10px;
 }
-.div_vacio{
-    padding-top: 30px;
-}
+
 .seccion{
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -124,13 +122,13 @@ ul{
 
 .seccion_general{
     background-color: #dddbcb;
-    padding-bottom: 90px;
+    padding-bottom: 70px;
     
 }
 
 .servicios{
     text-align: center;
-    padding-top: 90px;
+    padding-top: 30px;
     color: black;
     font-size: 35px;
     font-weight: 900;
@@ -142,8 +140,8 @@ ul{
     justify-content: space-between;
     padding-left: 40px;
     padding-right: 40px;
-    padding-bottom: 60px;
-    padding-top: 35px;
+    padding-bottom: 70px;
+    padding-top: 40px;
     color:black;
 }
 .derecho_familia{
@@ -166,13 +164,12 @@ ul{
 }
 .consulta_boton{
     background-color: #11242c;
-    width: 220px;
+    width: 250px;
     margin: auto;
     text-align: center;
     padding: 15px;
     margin-top: -120px;
     font-size: 20px;  
-    
 }
 
 .seccion_contacto{
@@ -181,7 +178,7 @@ ul{
 .contacto_formulario{
     display: flex;
     justify-content: space-between;
-    margin: 50px;
+    margin: 40px;
     margin-top: 30px;
 }
 .contacto{
@@ -193,10 +190,10 @@ ul{
 .formulario{
     line-height: 40px;
     width: 50%;
-    margin-left: 30px;
 }
 .comentarios{
     line-height: 30px;
+    text-align: justify;
 }
 .textos{
     width: 100%;
@@ -218,47 +215,24 @@ ul{
 
 .datos_contacto{
     width: 40%;
-    margin-right: -20px;
 }
 .oficina{
     text-align: center;
     margin-top: 5px;
 }
 .direccion_icono{
-    font-size: 30px;
-    background-color: #11242c;
-    color: white;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    padding: 5px;
+    font-size: 35px;
+
 }
 .email_icono{
-    font-size: 30px;
-    background-color: #11242c;
-    color: white;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    padding: 5px;
+    font-size: 35px;
+
 }
 .cel_icono{
-    font-size: 30px;
-    background-color: #11242c;
-    color: white;
-    height: 30px;
-    width: 29px;
-    border-radius: 50%;
-    padding: 6px;
+    font-size: 35px;
 }
 .horario_icono{
-    font-size: 30px;
-    background-color: #11242c;
-    color: white;  
-    border-radius: 100%;
-    padding: 6px;
-    width: 30px;
-    height: 30px;
+    font-size: 35px;
 }
 
 .direccion{
@@ -313,7 +287,7 @@ footer{
     color: white;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 604px) {
     body{
         font-size: 12px;
     }
@@ -325,7 +299,6 @@ footer{
     header{
         width: 100%;
         font-size: 12px;
-
     }
     .encabezado {
         flex-direction: column;
@@ -337,7 +310,9 @@ footer{
         display: flex;
         justify-content: center;
     }
-
+    .video{
+        height: auto;
+    }
     .panel_nav {
         width: 100%;
         padding-right: 15px;
@@ -353,8 +328,9 @@ footer{
     .autor {
         font-size: 16px;
     }
+
     .seccion_estudio{
-        padding-top: 50px;
+        padding-top: 0px;
     }
     .seccion {
         flex-direction: column;
@@ -381,17 +357,34 @@ footer{
     }
     .seccion_servicios {
         flex-direction: column;
-        gap: 20px;
+        gap: 40px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .servicios{
+        padding-top: 30px;
+        padding-bottom: 10px;
+        font-size: 25px;
+    }
+    .seccion_general{
+        padding-bottom: 40px;
     }
 
     .derecho_familia, .derecho_sucesorio, .abogacia_preventiva {
         width: 100%;
         height: auto;
     }
+    .consulta_boton{
+        width: 200px;
+        margin-top: 0px;
+        font-size: 16px; 
+        margin-bottom: 0px; 
+    }
 
     .contacto_formulario {
         flex-direction: column;
         padding: 0;
+        margin-top: 10px;
     }
 
     .formulario {
@@ -400,9 +393,349 @@ footer{
 
     .datos_contacto {
         width: 100%;
+        margin-top: 25px;
     }
 
     .mensaje {
         width: 100%;
     }
+    .contacto{
+        font-size: 25px;
+    }
+
+    .navegacion{
+        display: table;
+        line-height: 25px;
+    }
+    
+    .titulo{
+        font-size: 15px;
+    }
+
+}
+@media (min-width: 485px){
+    .seccion_servicios{
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+}
+@media (max-width: 500px){
+    .container_footer{
+        flex-direction: column;
+        line-height: 25px;
+    }
+    .derechos_reserv{
+        padding-top: 5px;
+        text-align: center;
+    }
+    
+}
+@media (min-width:605px){
+    main {
+        padding-top: 70px;
+    }
+    header{
+        width: 100%;
+        font-size: 12px;
+    }
+    .encabezado {
+        width: 100%;
+    }
+    .logo_nombre{
+        margin-left: 10px;
+    }
+
+    .nombre_sitio{
+        font-size: 15px;
+    }
+    .panel_nav{
+        width: 50%;
+        font-size: 13px;
+        margin-right: 20px;
+    }
+
+    .video{
+        height: auto;
+        width: 100%;
+    }
+    .frase {
+        font-size: 35px;
+    }
+
+    .seccion_estudio{
+        padding-top: 0px;
+    }
+    .seccion {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    .elestudio{
+        font-size: 25px;
+    }
+
+    .estudio {
+        width: 90%;
+        padding-left: 30px;
+    }
+
+    .abogada { 
+        width:90%;
+
+    }
+    .dra{
+        line-height: 40px;
+        font-size: 18px;
+        padding-top: 15px;
+    }
+    .imagen{
+        width: 90%;
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        padding-right: 30px;
+    }
+
+    .autor {
+        font-size: 20px;
+    }
+    .seccion_general{
+        background-color: #dddbcb;
+        padding-bottom: 60px;   
+    }
+    
+    .servicios{
+        font-size: 25px;
+    }
+    
+    .seccion_servicios{
+        flex-wrap: wrap;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+        padding-top: 35px;
+    }
+    .derecho_familia{
+        width: 50%;
+        height: 320px;
+        padding: 10px;
+    }
+    .derecho_sucesorio{
+        width: 50%;
+        height: 320px;
+        padding: 10px;
+    }
+    .abogacia_preventiva{
+        width: 50%;
+        height: 320px;
+        padding: 10px;
+    }
+    .consulta_boton{
+        margin-top: 0;
+    }
+    .contacto_formulario {
+        flex-direction: column;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+
+    .datos_contacto {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .mensaje {
+        width: 100%;
+    }
+    .contacto{
+        font-size: 25px;
+    }
+
+    .navegacion{
+        display: table;
+        line-height: 25px;
+    }
+    
+    .titulo{
+        font-size: 15px;
+    }
+}
+@media (min-width:700px){
+
+    .contacto{
+        font-size: 25px;
+    }
+    .contacto_formulario{
+        flex-direction: row;
+        margin: 40px;
+        gap: 40px;
+        margin-top: 25px;
+        
+    }
+    .formulario{
+        width: 50%;
+        margin-top: 0;
+    }
+    
+    .datos_contacto{
+        width: 50%;
+        margin-top: 0;
+    }
+   
+}
+@media(min-width:950px){
+
+    .frase {
+        font-weight: 600;
+        font-size: 50px;
+    }
+    
+    .autor {
+        font-size: 30px;
+    }
+    .seccion_estudio{
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+    
+    .seccion{
+        flex-direction: row;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 40px;
+        padding-left: 40px;
+        font-size: 14px;
+
+    }
+    .estudio{
+        width: 45%;
+    }
+    .elestudio{
+        font-size: 30px;
+    }
+    
+    .dra{
+        text-align: center;
+        line-height: 40px;
+    }
+    .imagen{
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+}
+@media(min-width:1000px){
+    
+    .logo_nombre{
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+    }
+    
+    .nombre_sitio{
+        font-size: 16px;
+    }
+    
+    .panel_nav{
+        margin-right: 40px;
+        width: 45%;
+        padding-top: 17px;
+    
+    }  
+    .frase {
+        font-weight: 600;
+        font-size: 60px;
+    }
+    
+    .autor {
+        font-size: 35px;
+    }
+    .seccion_estudio{
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+    
+    .seccion{
+
+        padding-top: 50px;
+        padding-bottom: 70px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .estudio{
+        width: 50%;
+        line-height: 35px; 
+    }
+    .elestudio{
+        text-align: center;
+        font-size: 35px;
+        font-weight: 900;
+        padding-top: 30px;
+    }
+    
+    .dra{
+        line-height: 50px;
+    }
+    .imagen{
+        padding-top: 5px;
+
+    }
+    .seccion_general{
+        padding-bottom: 50px;
+        
+    }
+    .servicios{
+        font-size: 35px;
+    }
+    
+    .seccion_servicios{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .derecho_familia{
+        width: 33%;
+        height: 320px;
+    }
+    .derecho_sucesorio{
+        width: 33%;
+        height: 320px;
+    }
+    .abogacia_preventiva{
+        width: 33%;
+        height: 320px;
+    }
+    .consulta_boton{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .contacto{
+        font-size: 35px;
+    }
+    .contacto_formulario{
+        flex-direction: row;
+        margin: 40px;
+        gap: 40px;
+        margin-top: 25px;
+        
+    }
+    .formulario{
+        width: 50%;
+        margin-top: 0;
+    }
+    
+    .datos_contacto{
+        width: 50%;
+        margin-top: 0;
+    }
+    
+    .titulo{
+        font-size: 17px;
+    }
+ 
+
 }
