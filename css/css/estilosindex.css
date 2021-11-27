@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300&family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@300&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+header{
+    background-color:#11242c;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    font-size: 15px;
+}
+#navlinks{
+    display:flex;
+    white-space: nowrap;
+    padding-right: 0px;
+    font-size: 14px;
+    gap: 50px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;   
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nombre_sitio{
+    font-size: 16px;
+}
+
+.banner_video {
+    position: relative;
+    line-height: 0;
+
+}
+.video {
+    width: 100%;
+    opacity: 0.7;
+    height: auto;
+}
+
+.frase_autor {
+    color:black;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+}
+
+.frase {
+    font-weight: 600;
+    font-size: 60px;
+}
+
+.autor {
+    font-size: 35px;
+}
+
+.seccion_estudio{
+    background-color: #f5f1e3;
+    font-size: 18px;
+}
+
+.estudio{
+    text-align: justify;
+    line-height: 35px;
+    padding-bottom: 100px;
+
+}
+.el_estudio{
+    font-size: 35px;
+    font-weight: 900;
+    padding-top: 30px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.dra{
+    text-align: center;
+    line-height: 70px;
+    font-weight: 900;
+    font-size: 25px;
+}
+.imagen{
+    height: 100%;
+}
+
+.seccion_general{
+    background-color: #dddbcb;
+    padding-bottom: 70px;   
+}
+
+.servicios{
+    text-align: center;
+    padding-top: 30px;
+    color: black;
+    font-size: 35px;
+    font-weight: 900;
+    padding-bottom: 30px;    
+}
+
+h5{
+    font-size: 40px;
+    font-weight: 800;
+    background-color: rgba(202, 197, 197, 0.356);
+}
+
+.consulta_boton{
+    background-color: #11242c;
+    width: 250px;
+    margin: auto;
+    text-align:center;
+    padding: 15px;
+    margin-top: 50px;
+    font-size: 20px;  
+}
+
+.seccion_contacto{
+    background-color: #e8e8e8;
+}
+
+.contacto{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 900;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.consulta{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.boton_enviar{
+    display: flex;
+    justify-content: flex-end;
+}
+.comentarios{
+    line-height: 30px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.datos_contacto{
+    padding-left: 80px;
+}
+
+.oficina{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+.direccion_icono{
+    font-size: 35px;
+}
+.email_icono{
+    font-size: 35px;
+}
+.cel_icono{
+    font-size: 35px;
+}
+.horario_icono{
+    font-size: 35px;
+}
+
+.direccion{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.direccion_texto{
+    margin-left: 10px;
+    line-height: 30px;
+}
+.mapa{
+    margin-top: 20px;
+    width: 100%;
+    height: 400px;
+}
+.fijar{
+    position: fixed;
+    bottom: 0;
+    right: 0; 
+    margin: 20px;
+    margin-bottom: 30px;
+  
+}
+.fijar_boton{
+    background-color: #25d366;
+    padding: 6px;
+    font-size: 40px;
+    border-radius: 100%;
+}
+
+footer{
+    background-color:#11242c;
+}
+.container_footer{
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.navegacion{
+    display: table;
+    line-height: 25px;
+    padding: 0;
+}
+
+.titulo{
+    font-size: 17px;
+    font-weight: 700;
+}
+.derechos_reservados{
+    color: white;
+}
+
+@media (max-width: 500px){
+
+    main {
+        padding-top: 66px;
+    }
+    .video{
+        height: auto;
+    }
+    .frase_autor{
+        line-height: 20px;
+    }
+    .frase {
+        font-size: 25px;
+    }
+
+    .autor {
+        font-size: 16px;
+    }
+    .seccion_estudio{
+        font-size: 13px;
+    }
+    
+    .estudio{
+        text-align: justify;
+        line-height: 35px;
+        padding-bottom: 30px;
+    }
+
+    .el_estudio{
+        font-size: 25px;
+    }
+    
+    .dra{
+        line-height: 40px;
+        font-size: 18px;
+    }
+
+    .servicios{
+        font-size: 25px;
+    }
+    h5{
+        font-size: 16px;
+    }
+    .consulta_boton{
+        width: 200px;
+        font-size: 18px; 
+    }
+
+    .datos_contacto{
+        padding-left: 0;
+        margin-top: 30px;
+    }
+    .oficina{
+        padding-bottom: 15px;
+    }
+    .contacto{
+        padding-bottom: 20px;
+        font-size: 25px;
+    }
+    .consulta{
+        font-size: 18px;
+    }
+    .comentarios{
+        font-size: 13px;
+    }
+    .direccion_icono{
+        font-size: 30px;
+    }
+    .email_icono{
+        font-size: 30px;
+    }
+    .cel_icono{
+        font-size: 30px;
+    }
+    .horario_icono{
+        font-size: 30px;
+    }  
+
+    .direccion_texto{
+        margin-left: 10px;
+        line-height: 30px;
+    }
+
+    .container_footer{
+        flex-direction: column;
+        line-height: 25px;
+    }
+    .titulo{
+        font-size: 15px;
+    }
+    .derechos_reserv{
+        padding-top: 5px;
+        text-align: center;
+    }
+    
+}
+@media (max-width: 337px){
+    main {
+        padding-top: 106px;
+    }
+    .video{
+        height: auto;
+    }
+    .frase_autor{
+        line-height: 20px;
+    }
+    .frase {
+        font-size: 25px;
+    }
+    
+    .autor {
+        font-size: 16px;
+    }
+}
+@media (min-width: 501px){
+    main{
+        padding-top: 60px;
+    }
+    .video{
+        height: auto;
+    }
+    .frase_autor{
+        line-height: 25px;
+    }
+    .frase {
+        font-size: 30px;
+    }
+    .autor {
+        font-size: 20px;
+    }
+    .estudio{
+        line-height: 45px;
+        padding-bottom: 30px;
+    }
+    .el_estudio{
+        font-size: 30px;
+    }
+    
+    .dra{
+        line-height: 40px;
+        font-size: 24px;
+    }
+
+    .servicios{
+        font-size: 30px;
+    }
+    h5{
+        font-size: 20px;
+    }
+    .consulta_boton{
+        width: 200px;
+        font-size: 18px; 
+    }
+    .datos_contacto{
+        padding-left: 10px;
+    }
+    .oficina{
+        padding-bottom: 15px;
+    }
+    .contacto{
+        padding-bottom: 20px;
+        font-size: 30px;
+    }
+    .consulta{
+        font-size: 24px;
+    }
+    .comentarios{
+        font-size: 16px;
+    }
+}
+@media (min-width: 768px){
+
+    main{
+        padding-top: 60px;
+    }
+
+    .frase {
+        font-size: 40px;
+    }
+    
+    .autor {
+        font-size: 25px;
+    }
+    
+    .seccion_estudio{
+        font-size: 16px;
+    }
+    
+    .estudio{
+        line-height: 35px;
+        padding-bottom: 50px;
+    }
+    .el_estudio{
+        font-size: 30px;
+    } 
+    .dra{
+        line-height: 55px;
+        font-size: 20px;
+    }
+    .imagen{
+        height: 80%;
+        padding-top: 100px;
+    }
+    .servicios{
+        font-size: 30px;    
+    }
+    h5{
+        font-size: 30px;
+    }
+    .contacto{
+        font-size: 30px;
+    }
+    .consulta{
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 5px;
+    }
+}
+@media (max-width: 991px){
+    #navlinks{
+        gap: 10px;
+    }
+}
+@media (min-width: 1000px){
+
+    .frase_autor{
+        line-height: 50px;
+    }
+    .frase {
+        font-size: 60px;
+    }
+    .autor {
+        font-size: 35px;
+    }
+    .estudio{
+        line-height: 45px;
+        padding-bottom: 80px;
+    }
+    .seccion_estudio{
+        font-size: 18px;
+    }
+    .el_estudio{
+        font-size: 35px;
+    }
+    
+    .dra{
+        line-height: 40px;
+        font-size: 25px;
+    }
+    
+    .imagen{
+        height: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .servicios{
+        font-size: 35px;
+    }
+    h5{
+        font-size: 38px;
+    }
+    .consulta_boton{
+        width: 250px;
+        padding: 15px;
+        margin-top: 50px;
+        font-size: 20px;
+    }
+    .oficina{
+        padding-bottom: 15px;
+    }
+    .contacto{
+        padding-bottom: 40px;
+        font-size: 35px;
+    }
+    .consulta{
+        font-size: 24px;
+    }
+    .comentarios{
+        font-size: 16px;
+    }
+    .datos_contacto{
+        padding-left: 80px;
+        font-size: 16px;
+    }
+   
+}
