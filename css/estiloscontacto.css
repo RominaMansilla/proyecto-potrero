@@ -73,6 +73,7 @@ h3{
 .boton_enviar{
     display: flex;
     justify-content: flex-end;
+    gap: 18px;
 }
 .comentarios{
     line-height: 30px;
