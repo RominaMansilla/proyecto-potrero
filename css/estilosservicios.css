@@ -1,133 +1,180 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300&family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@300&family=Roboto&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{
-    background-color:transparent;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
 }
 
 header{
     background-color:#11242c;
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    height: 90px;
-    width: 100%;
     z-index: 100;
+    font-size: 15px;
 }
-.encabezado{
-    
-    display: flex;
-    justify-content: space-around;
-    padding-top: 25px;
-    gap: 350px;
-
-}
-.logo_nombre{
-    width: 25%;
-    display: flex;
-    padding-top: 5px;
-}
-.nombre_sitio{
-    color: white;
-    font-size: 17px;
-    text-decoration: none;
-    position: relative;
-    top: 3.5px;
-}
-.logo{
-    margin-top: -4.1px;
-}
-.nav{
-    text-decoration: none;
-    color: white;
-}
-.panel_nav{
-    margin-right: 30px;
-    width: 40%;
-    padding-top: 13px;
-    justify-content: center;  
-
-}
-ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
+#navlinks{
+    display:flex;
+    white-space: nowrap;
+    padding-right: 0px;
+    font-size: 14px;
+    gap: 50px;
 }
 
-.servicios{
-    text-align: center;
-    margin: 20px;
-    color: black;
-    font-size: 35px;
-    font-weight: 900;
-    padding-top: 90px;
-}
-
-.seccion_servicios{
-    display: flex;
-    justify-content: space-between;
-    margin: 50px;
-    margin-top: 30px;
-    color:black;
-}
-.derecho_familia{
-    width: 30%;
-    height: 400px;
-    text-align: center;
-    font-size: 13px;
-}
-.derecho_sucesorio{
-    width: 30%;
-    height: 400px;
-    text-align: center;
-    font-size: 13px;
-}
-.abogacia_preventiva{
-    width: 30%;
-    height: 400px;
-    text-align: center;
-    font-size: 13px;
-}
-.consulta{
-    background-color: #11242c;
-    font-size: x-large;
-    width: 220px;
-    margin: auto;
-    text-align: center;
-    padding: 15px;
-    margin-top: -120px;
-    font-size: 20px;
-    margin-bottom: 30px;
-    
-}
 a{
     color: white;
     text-decoration: none;
 }
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;   
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nombre_sitio{
+    font-size: 16px;
+}
+
+.seccion_general{
+    background-color: #dddbcb;
+    padding-bottom: 70px;
+    padding-top: 70px;   
+}
+
+.servicios{
+    text-align: center;
+    padding-top: 30px;
+    color: black;
+    font-size: 35px;
+    font-weight: 900;
+    padding-bottom: 30px;    
+}
+
+h5{
+    font-size: 40px;
+    font-weight: 800;
+    background-color: rgba(202, 197, 197, 0.356);
+}
+
+.consulta_boton{
+    background-color: #11242c;
+    width: 250px;
+    margin: auto;
+    text-align:center;
+    padding: 15px;
+    margin-top: 50px;
+    font-size: 20px;  
+}
+
 footer{
     background-color:#11242c;
 }
 .container_footer{
     padding: 20px;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    
 }
 .navegacion{
     display: table;
     line-height: 25px;
-
+    padding: 0;
 }
 
-a{
-    text-decoration: none;
-    color: white;
-}
 .titulo{
     font-size: 17px;
+    font-weight: 700;
 }
-
-
+.derechos_reservados{
+    color: white;
+}
+@media (max-width: 500px){
+    .servicios{
+        font-size: 25px;
+    }
+    h5{
+        font-size: 16px;
+    }
+    .consulta_boton{
+        width: 200px;
+        font-size: 18px; 
+    }
+    .container_footer{
+        flex-direction: column;
+        line-height: 25px;
+    }
+    .titulo{
+        font-size: 15px;
+    }
+    .derechos_reserv{
+        padding-top: 5px;
+        text-align: center;
+    }
+    
+}
+@media (min-width: 501px){
+    .servicios{
+        font-size: 30px;
+    }
+    h5{
+        font-size: 20px;
+    }
+    .consulta_boton{
+        width: 200px;
+        font-size: 18px; 
+    }
+}
+@media (min-width: 768px){
+    .servicios{
+        font-size: 30px;    
+    }
+    h5{
+        font-size: 30px;
+    }
+}
+@media (max-width: 991px){
+    #navlinks{
+        gap: 10px;
+    }
+}
+@media (min-width: 1000px){
+    .servicios{
+        font-size: 35px;
+    }
+    h5{
+        font-size: 38px;
+    }
+    .consulta_boton{
+        width: 250px;
+        padding: 15px;
+        margin-top: 50px;
+        font-size: 20px;
+    }
+}
+@media (max-width: 337px){
+    .seccion_general{
+    padding-top: 95px;   
+}
+}
