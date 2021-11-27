@@ -6,150 +6,198 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudio Jurídico AM</title>
     <link rel="icon" href="Imagenes/LOGO-removebg-preview.png">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/estilosindex.css">
     <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
 </head>
 <body>
     <header>
-        <div class="encabezado">
-            <div class="logo_nombre">
-                <a href="#inicio"><img class="logo" src="Imagenes/20210915_212648_0000_preview_rev_1.png" height="40px" width="48px" alt=""></a>
-                <a href="#inicio"> <span class="nombre_sitio">ESTUDIO JURÍDICO AM</span></a>
-            </div>
-            <div class="panel_nav">
-                <nav>
-                    <ul>
-                        <li><a href="#inicio">INICIO</a></li>
-                        <li><a href="estudio.html">EL ESTUDIO</a></li>
-                        <li><a href="#sec_servicios">SERVICIOS</a></li>
-                        <li><a href="#sec_contacto">CONTACTO</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light  navbar navbar-light" style="background-color: #11242c;">
+            <div class="container">
+                <a class="navbar-brand" style="color: white;" href="index.html">
+                <img src="Imagenes/20210915_212648_0000_preview_rev_1.png" alt="" width="48px" height="40px" class="inline-block align-text-center">
+                <span class="nombre_sitio">ESTUDIO JURÍDICO AM</span>  
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navlinks">
+                        <li class="nav-item">
+                            <a class="nav-link active" style="color: white;" aria-current="page" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" style="color: white;" aria-current="page" href="estudio.html">EL ESTUDIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" style="color: white;" aria-current="page" href="servicios.html">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" style="color: white;" aria-current="page" href="contacto.html">CONTACTO</a>
+                        </li>
                     </ul>
-                </nav>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
-    <main id="inicio">
+    <main>
         <section class="banner_video">
-            <video class="video" src="Imagenes/pexels-anthony-shkraba-production-8136086.mp4"autoplay muted loop></video>
-            <div class="frase_autor">
-                <p class="frase">ESTUDIO JURÍDICO AM</p>
-                <p class="autor">Asesoría legal</p>
-            </div>
+                <video class="video" src="Imagenes/pexels-anthony-shkraba-production-8136086.mp4"autoplay muted loop></video>
+                <div class="frase_autor">
+                    <p class="frase">ESTUDIO JURÍDICO AM</p>
+                    <p class="autor">Asesoría legal</p>
+                </div>
         </section>
 
-        <section class="seccion_estudio">
-            <h1 class="elestudio">EL ESTUDIO</h1>
-            <article class="seccion">
-                <div class="estudio">
-                <p>El Estudio Jurídico AM ofrece una atención amable y asesoramiento personalizado 
-                    en derecho de familia y sucesiones, siguiendo las necesidades de cada cliente.</p>
-                <h2 class="dra">Dra. Andrea Paola Mansilla</h2>
-                <p>Abogada egresada de la Universidad de la Patagonia San Juan Bosco con matrícula 
-                    C1255 del Colegio Público de Abogados de Comodoro Rivadavia.</p>
+        <section class="seccion_estudio" id="elestudio">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <article class="container">
+                            <div class="estudio">
+                                <h1 class="el_estudio">EL ESTUDIO</h1>
+                                <p>El Estudio Jurídico AM ofrece una atención amable y asesoramiento personalizado 
+                                en derecho de familia y sucesiones, siguiendo las necesidades de cada cliente.</p>
+                                <h2 class="dra">Dra. Andrea Paola Mansilla</h2>
+                                <p>Abogada egresada de la Universidad de la Patagonia San Juan Bosco con matrícula 
+                                C1255 del Colegio Público de Abogados de Comodoro Rivadavia.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <article class="container_fluid imagen">
+                            <img class="abogada" src="Imagenes/WhatsApp Image 2021-11-22 at 16.08.18.jpeg" height="100%" width="100%" alt="">
+                        </article>
+                    </div>
                 </div>
-                <div class="imagen">
-                <img class="abogada" src="Imagenes/abogada.jpg" height="330px" width="500px" alt="">
-                </div>
-            </article>
+            </div>
         </section>
 
         <section class="seccion_general" id="sec_servicios">
             <h1 class="servicios">SERVICIOS</h1>
-            <article class="seccion_servicios">
-                <div class="derecho_familia">
-                    <img src="Imagenes/derecho de familia.jpg" width="100%" height="275px" alt="">
-                    <h2 >DERECHO DE FAMILIA</h2>
+            <article>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="carouselExampleDark" class="carousel carousel-dark slide" style="max-width: 800px; margin: auto;" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active" data-bs-interval="8000">
+                                    <img src="Imagenes/WhatsApp Image 2021-11-22 at 21.11.14.jpeg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-block">
+                                      <h5>DERECHO DE FAMILIA</h5>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item" data-bs-interval="8000">
+                                    <img src="Imagenes/Derecho-de-Sucesiones-1024x683.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-block">
+                                      <h5>SUCESIONES</h5>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item" data-bs-interval="8000">
+                                    <img src="Imagenes/WhatsApp Image 2021-11-22 at 19.45.19.jpeg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-block">
+                                      <h5>ABOGACÍA PREVENTIVA</h5>
+                                    </div>
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="derecho_sucesorio">
-                    <img src="Imagenes/Derecho-de-Sucesiones-1024x683.jpg" width="100%" height="275px" alt="">
-                    <h2>SUCESIONES</h2>
-                </div>
-                <div class="abogacia_preventiva">
-                    <img src="Imagenes/abogacía preventiva.jpg" width="100%" height="275px" alt="">
-                    <h2>ABOGACÍA PREVENTIVA</h2>
+                <div class="consulta_boton">
+                    <a class="boton" href="contacto.html">Realiza tu consulta</a>
                 </div>
             </article>
-            <div class="consulta_boton">
-                <a class="boton" href="#sec_contacto">Realiza tu consulta</a>
-            </div>
-            <section class="fijar">
+            <article class="fijar">
                 <a class="fijar_boton" href="https://api.whatsapp.com/send?phone=5492974229206> " target="_blank"><span class="jam jam-whatsapp fijar_boton"></span></a>
-            </section>
+            </article>
         </section>
 
         <section class="seccion_contacto" id="sec_contacto">
             <h1 class="contacto">CONTACTO</h1>
-            <article class="contacto_formulario">
-                <div class="formulario">
-                    <h2 class="consulta">Envía tu consulta</h2>
-                    <p class="comentarios"> Para preguntas o comentarios por favor llámanos o completa el formulario a continuación:</p>
-                    <form action="validar.php" method="post">
-                        <div>
-                            <label for="Nombre"></label> 
-                            <input class="textos" type="text" required="" name="Nombre" id="Nombre" placeholder="Nombre*">
-                        </div>
-                        <div>
-                            <label for="Apellido"></label>
-                            <input class="textos" type="text" required="" name="Apellido" id="Apellido" placeholder="Apellido*">
-                        </div>
-                        <div>
-                            <label  for="Asunto"></label>
-                            <input class="textos" type="text" required="" name="Asunto" id="Asunto" placeholder="Asunto*">
-                        </div>
-                        <div>
-                            <label for="Telefono"></label>
-                            <input class="textos" type="number" name="Telefono" id="Telefono" placeholder="Teléfono">
-                        </div>
-                        <div>
-                            <label for="Email"></label>
-                            <input class="textos" type="email" required="" name="Email" id="Email" placeholder="Email*">
-                        </div>
-                        <div>
-                            <label class="items" for="Mensaje"></label>
-                            <textarea class="mensaje" required="" name="Mensaje" id="Mensaje" placeholder="Mensaje*" cols="30" rows="10"></textarea>
-                        </div>
-                        <div class="botones">
-                            <input class="boton" type="reset" value="Borrar">
-                            <input class="boton" type="submit" value="Enviar">
-                        </div>
-                    </form>
-                </div>  
-            
-                <div class="datos_contacto">
-                    <h2 class="oficina">Oficina</h2>
-                    <div class="direccion">
-                        <span class="jam jam-map-marker-f direccion_icono"></span>
-                        <div class="direccion_texto">
-                            <h3>Dirección</h3>
-                            <p>Ramos Mejía 191, Comodoro Rivadavia, Argentina</p>
-                        </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h2 class="consulta">Envía tu consulta</h2>
+                        <p class="comentarios"> Para preguntas o comentarios por favor llámanos o completa el formulario a continuación:</p>
+                        <form>
+                            <div class="mb-3">
+                                <label for="formGroupExampleInput" class="form-label">Nombre y Apellido</label>
+                                <input type="text" required="" class="form-control" id="formGroupExampleInput" placeholder="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="formGroupExampleInput2" class="form-label">Asunto</label>
+                                <input type="text" required="" class="form-control" id="formGroupExampleInput2" placeholder="">
+                            </div>
+                            <div class="mb-3">
+                              <label for="formGroupExampleInput" class="form-label">Teléfono</label>
+                              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                <input type="email" required="" class="form-control" id="exampleFormControlInput1" placeholder="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1"class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="boton_enviar">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            </div>
+                        </form>
                     </div>
-                    <div class="direccion">
-                        <span class="jam jam-envelope-f email_icono"></span>
-                        <div class="direccion_texto">
-                            <h3>Email</h3>
-                            <p>andreapmansilla@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="direccion">
-                        <span class="jam jam-whatsapp cel_icono"></span>
-                        <div class="direccion_texto">
-                            <h3>Celular</h3>
-                            <p>(0297) 154229206 </p>
-                        </div>
-                    </div>
-                    <div class="direccion">
-                        <span class="jam jam-clock-f horario_icono"></span>
-                        <div class="direccion_texto">
-                            <h3>Atención de consultas</h3>
-                            <p>Lunes a Viernes de 9 a 17 hs (con cita previa)</p>
+                    <div class="col-12 col-md-6">
+                        <div class="datos_contacto">
+                            <h2 class="oficina">Oficina</h2>
+                            <div class="direccion">
+                                <span class="jam jam-map-marker-f direccion_icono"></span>
+                                <div class="direccion_texto">
+                                     <h3>Dirección</h3>
+                                     <p>Ramos Mejía 191, Comodoro Rivadavia, Argentina</p>
+                                </div>
+                            </div>
+                            <div class="direccion">
+                                <span class="jam jam-envelope-f email_icono"></span>
+                                <div class="direccion_texto">
+                                    <h3>Email</h3>
+                                    <p>andreapmansilla@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="direccion">
+                                <span class="jam jam-whatsapp cel_icono"></span>
+                                <div class="direccion_texto">
+                                    <h3>Celular</h3>
+                                    <p>(0297) 154229206 </p>
+                                </div>
+                            </div>
+                            <div class="direccion">
+                                <span class="jam jam-clock-f horario_icono"></span>
+                                <div class="direccion_texto">
+                                    <h3>Atención de consultas</h3>
+                                    <p>Lunes a Viernes de 9 a 17 hs (con cita previa)</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </article>
-        <section>
-            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2777.909085538405!2d-67.50268568442876!3d-45.87312847910791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde454ee7128d4eb%3A0xe9da7b224baf1ec3!2sRamos%20Mej%C3%ADa%20191%2C%20U9000BSC%20Comodoro%20Rivadavia%2C%20Chubut!5e0!3m2!1ses!2sar!4v1632853465918!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>      
-        </section>
+            </div>
+        <article>
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2777.909085538405!2d-67.50268568442876!3d-45.87312847910791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde454ee7128d4eb%3A0xe9da7b224baf1ec3!2sRamos%20Mej%C3%ADa%20191%2C%20U9000BSC%20Comodoro%20Rivadavia%2C%20Chubut!5e0!3m2!1ses!2sar!4v1632853465918!5m2!1ses!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>      
+        </article>
+    </section>
     </main>
     <footer>
         <div class="container_footer">
@@ -157,10 +205,10 @@
                 <h2 class="titulo">Estudio Jurídico AM</h2>
                 <div>
                     <ul class="navegacion">
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#el_estudio">El Estudio</a></li>
-                        <li><a href="#sec_servicios">Servicios</a></li>
-                        <li></li><a href="#sec_contacto">Contacto</a></li>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="estudio.html">El Estudio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li></li><a href="contacto.html">Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -169,5 +217,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

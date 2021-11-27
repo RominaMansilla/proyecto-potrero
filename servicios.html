@@ -1,58 +1,95 @@
-<!DOCTYPE html><!--VERSION HTML DEL DOCUMENTO HTML5-->
-<html lang="en"><!--ETIQUETA DE APERTURA-->
-<head><!--CONFIGURAR NUESTRO DOCUMENTO, NO VISIBLE PARA EL USUARIO COMUN-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudio Jurídico AM</title>
     <link rel="icon" href="Imagenes/LOGO-removebg-preview.png">
-    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/estilosservicios.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300&family=Roboto&display=swap');
-        </style>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@300&family=Roboto&display=swap');
-            </style>
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
 </head>
 <body>
     <header>
-        <div class="encabezado">
-            <div class="logo_nombre">
-                <a class="nav" href="index.html"><img class="logo" src="Imagenes/20210915_212648_0000_preview_rev_1.png" height="43px" width="51px" alt=""></a>
-                <a class="nav" href="index.html"> <span class="nombre_sitio">ESTUDIO JURÍDICO AM</span></a>
+        <nav class="navbar navbar-expand-lg navbar-light  navbar navbar-light" style="background-color: #11242c;">
+            <div class="container">
+                <a class="navbar-brand" style="color: white;" href="index.html">
+                <img src="Imagenes/20210915_212648_0000_preview_rev_1.png" alt="" width="48px" height="40px" class="inline-block align-text-center">
+                <span class="nombre_sitio">ESTUDIO JURÍDICO AM</span>  
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navlinks">
+                        <li class="nav-item">
+                            <a class="nav-link active" style="color: white;" aria-current="page" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" style="color: white;" aria-current="page" href="estudio.html">EL ESTUDIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" style="color: white;" aria-current="page" href="servicios.html">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" style="color: white;" aria-current="page" href="contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="panel_nav">
-                <nav>
-                    <ul>
-                        <li><a class="nav" href="index.html">INICIO</a></li>
-                       <li><a class="nav" href="estudio.html">EL ESTUDIO</a></li>
-                       <li><a class="nav" href="servicios.html">SERVICIOS</a></li>
-                       <li><a class="nav" href="contacto.html">CONTACTO</a></li>
-                   </ul>
-               </nav>
-            </div>
-        </div>
+        </nav>
     </header>
     <main>
-        <h1 class="servicios">SERVICIOS</h1>
-        <section class="seccion_servicios">
-            <div class="derecho_familia">
-                <img src="Imagenes/derecho de familia.jpg" width="100%" height="275px" alt="">
-                <h2 >DERECHO DE FAMILIA</h2>
-            </div>
-            <div class="derecho_sucesorio">
-                <img src="Imagenes/Derecho-de-Sucesiones-1024x683.jpg" width="100%" height="275px" alt="">
-                <h2>SUCESIONES</h2>
-            </div>
-            <div class="abogacia_preventiva">
-                <img src="Imagenes/abogacía preventiva.jpg" width="100%" height="275px" alt="">
-                <h2>ABOGACÍA PREVENTIVA</h2>
-            </div>  
+          <section class="seccion_general" id="sec_servicios">
+            <h1 class="servicios">SERVICIOS</h1>
+            <article>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="carouselExampleDark" class="carousel carousel-dark slide" style="max-width: 800px; margin: auto;" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active" data-bs-interval="8000">
+                                    <img src="Imagenes/WhatsApp Image 2021-11-22 at 21.11.14.jpeg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-block">
+                                      <h5>DERECHO DE FAMILIA</h5>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item" data-bs-interval="8000">
+                                    <img src="Imagenes/Derecho-de-Sucesiones-1024x683.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-block">
+                                      <h5>SUCESIONES</h5>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item" data-bs-interval="8000">
+                                    <img src="Imagenes/WhatsApp Image 2021-11-22 at 19.45.19.jpeg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-block">
+                                      <h5>ABOGACÍA PREVENTIVA</h5>
+                                    </div>
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="consulta_boton">
+                    <a class="boton" href="contacto.html">Realiza tu consulta</a>
+                </div>
+            </article>
         </section>
-        <div class="consulta">
-            <a class="boton" href="contacto.html">Realiza tu consulta</a>
-        </div>
     </main>
     <footer>
         <div class="container_footer">
@@ -67,7 +104,11 @@
                     </ul>
                 </div>
             </div>
+            <div class="derechos_reserv"> 
+                <span class="derechos_reservados"> ©2021 Estudio Jurídico AM</span>
+            </div>
         </div>
     </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html><!--ETIQUETA DE CIERRE-->
